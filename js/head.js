@@ -4,7 +4,7 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
+  View
 } from 'react-native';
 export default class Head extends Component{
     render() {
@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         height:50,
         alignItems:'center',
+        justifyContent: 'center', 
     },
     textSize:{
         fontSize: 18,
         color:'black',
-        textAlign: 'center',
     }
 });

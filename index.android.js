@@ -8,7 +8,7 @@ import {
   View,
   Text
 } from 'react-native';
-import Login from './js/login.js';
+import Login from "./js/myjsq";
 const defaultRoute = {
   component: Login
 };

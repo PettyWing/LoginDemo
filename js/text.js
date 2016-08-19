@@ -12,6 +12,18 @@ import {
   View
 } from 'react-native';
 export default class text extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            rowName: null
+        }
+    }
+    componentDidMount() {
+        //这里获取从FirstPageComponent传递过来的参数: id
+        this.setState({
+            rowName: this.props.rowName
+        });
+    }
     _back() {
 		this.props.navigator.pop();
 	}
@@ -21,7 +33,7 @@ export default class text extends Component {
           <View style={styles.cell}>
               <Text style={styles.welcome}
                 onPress={this._back.bind(this)}>
-                  返回
+                  {this.state.rowName}
               </Text>
           </View>
           <View style={styles.cell}>
